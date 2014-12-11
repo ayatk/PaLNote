@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" stylesheets="@../css/Window.css" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="PreferencesController">
+    <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="ToolBar">
+        <Button fx:id="general" contentDisplay="TOP" mnemonicParsing="false" text="General">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/basic/ic_dashboard_white_24dp.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="edit" contentDisplay="TOP" mnemonicParsing="false" text="Editor">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/basic/ic_create_white_24dp.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="plugin" contentDisplay="TOP" mnemonicParsing="false" text="Plugins">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/basic/ic_extension_white_24dp.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="language" contentDisplay="TOP" mnemonicParsing="false" text="Language">
+            <graphic>
+                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../images/basic/ic_language_white_24dp.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </ToolBar>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <Label layoutX="30.0" layoutY="29.0" text="Label"/>
+    </AnchorPane>
+</VBox>

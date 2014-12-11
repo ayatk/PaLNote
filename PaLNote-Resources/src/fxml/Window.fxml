@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0"
+      prefWidth="643.0" stylesheets="@../css/Window.css" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
+    <children>
+        <MenuBar useSystemMenuBar="true">
+            <menus>
+                <Menu mnemonicParsing="false" text="PaLNote">
+                    <items>
+                        <MenuItem fx:id="about_app" mnemonicParsing="false" onAction="#onAboutApp"
+                                  text="About PaLNote"/>
+                        <MenuItem fx:id="check_updates" disable="true" mnemonicParsing="false" onAction="#onCheckUpdate"
+                                  text="Check for Updates"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem fx:id="preferences" mnemonicParsing="false" onAction="#onPreferences"
+                                  text="Preferences..."/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem fx:id="quit_application" mnemonicParsing="false" onAction="#onQuitApplication"
+                                  text="QuitApplication"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="New"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Open"/>
+                        <MenuItem mnemonicParsing="false" text="Close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo"/>
+                        <MenuItem mnemonicParsing="false" text="Redo"/>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ToolBar prefHeight="0.0" prefWidth="779.0" styleClass="ToolBar">
+            <items>
+                <Button fx:id="save" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_save_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Save"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="undo" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_undo_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Undo"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="redo" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_redo_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Redo"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="copy" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_content_copy_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Code Copy"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="console" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/console_white.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Console"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="plugins" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_extension_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="plugins"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="settings" mnemonicParsing="false" onAction="#onPreferences" prefHeight="35.0"
+                        prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_settings_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Settings"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="bug_report" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_bug_report_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Bug Report"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="help" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_help_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Help"/>
+                    </tooltip>
+                </Button>
+                <Separator orientation="VERTICAL" prefHeight="35.0" prefWidth="5.0"/>
+                <Button fx:id="search" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/basic/ic_search_white_24dp.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Search"/>
+                    </tooltip>
+                </Button>
+            </items>
+        </ToolBar>
+        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextArea prefHeight="471.0" prefWidth="593.0" styleClass="TextArea" HBox.hgrow="ALWAYS"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

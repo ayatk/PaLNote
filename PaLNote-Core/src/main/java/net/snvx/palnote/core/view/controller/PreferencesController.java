@@ -14,18 +14,18 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class PreferencesController {
-    @FXML
-    private Button general;
-    @FXML
-    private Button edit;
-    @FXML
-    private Button plugin;
-    @FXML
-    private Button language;
+  @FXML
+  private Button general;
+  @FXML
+  private Button edit;
+  @FXML
+  private Button plugin;
+  @FXML
+  private Button language;
 
-    @FXML
-    public void on(ActionEvent event) {
+  @FXML
+  public void on(ActionEvent event) {
 
-    }
+  }
 
 }

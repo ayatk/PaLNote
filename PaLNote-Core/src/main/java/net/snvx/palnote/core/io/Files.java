@@ -13,25 +13,25 @@ import java.io.File;
 import java.io.IOException;
 
 public class Files {
-    public void NewFile(String dir, String newFileName) {
-        File file = new File(dir + newFileName);
-        try {
-            if (!file.createNewFile()) {
-            }
-        } catch (IOException e) {
-
-        }
-    }
-
-    public void deleteFile() {
+  public void NewFile(String dir, String newFileName) {
+    File file = new File(dir + newFileName);
+    try {
+      if (!file.createNewFile()) {
+      }
+    } catch (IOException e) {
 
     }
+  }
 
-    public void createNewDirectory(String newDirectoryName) {
+  public void deleteFile() {
 
-    }
+  }
 
-    public void saveFile (String FileName) {
+  public void createNewDirectory(String newDirectoryName) {
 
-    }
+  }
+
+  public void saveFile(String FileName) {
+
+  }
 }

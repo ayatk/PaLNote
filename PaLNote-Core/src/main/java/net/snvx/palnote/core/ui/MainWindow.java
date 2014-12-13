@@ -23,53 +23,52 @@ import javafx.stage.Stage;
  * MainWindowClass
  */
 public class MainWindow {
-    private Scene Window = null;
+  private Scene Window = null;
 
-    private static int WINDOW_WIDTH = 600;
-    private static int WINDOW_HEIGHT = 500;
+  private static int WINDOW_WIDTH = 600;
+  private static int WINDOW_HEIGHT = 500;
 
-    public void mainWindow(Stage stage) {
-        VBox root = new VBox();
-        this.Window = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT, Color.WHITE);
+  public void mainWindow(Stage stage) {
+    VBox root = new VBox();
+    this.Window = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT, Color.WHITE);
 
-        //メニューバー
-        MenuBar menuBar = new MenuBar();
+    //メニューバー
+    MenuBar menuBar = new MenuBar();
 
-        Menu menuPaLNote = new Menu("PaLNote");
-        MenuItem aboutApp = new MenuItem("About PaLNote");
-        aboutApp.setOnAction((event) -> {
-                    Stage aboutStage = new AboutAppWindow();
-                    aboutStage.show();
-                }
-        );
+    Menu menuPaLNote = new Menu("PaLNote");
+    MenuItem aboutApp = new MenuItem("About PaLNote");
+    aboutApp.setOnAction((event) -> {
+              Stage aboutStage = new AboutAppWindow();
+              aboutStage.show();
+            }
+    );
 
-        MenuItem preferences = new MenuItem("Preferences...");
+    MenuItem preferences = new MenuItem("Preferences...");
 
-        MenuItem quitApplication = new MenuItem("QuitApplication");
-        quitApplication.setOnAction((event) -> Platform.exit());
+    MenuItem quitApplication = new MenuItem("QuitApplication");
+    quitApplication.setOnAction((event) -> Platform.exit());
 
-        menuPaLNote.getItems().addAll(aboutApp, preferences, quitApplication);
+    menuPaLNote.getItems().addAll(aboutApp, preferences, quitApplication);
 
-        Menu menuFile = new Menu("File");
-        MenuItem newFile = new MenuItem("New");
-        MenuItem openFile = new MenuItem("Open");
-        MenuItem close = new MenuItem("Close");
+    Menu menuFile = new Menu("File");
+    MenuItem newFile = new MenuItem("New");
+    MenuItem openFile = new MenuItem("Open");
+    MenuItem close = new MenuItem("Close");
 
-        menuFile.getItems().addAll(newFile, openFile, close);
+    menuFile.getItems().addAll(newFile, openFile, close);
 
-        Menu menuEdit = new Menu("Edit");
-        MenuItem undo = new MenuItem("Undo");
-        MenuItem redo = new MenuItem("Redo");
-        SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
-        menuEdit.getItems().addAll(undo, redo, separatorMenuItem);
+    Menu menuEdit = new Menu("Edit");
+    MenuItem undo = new MenuItem("Undo");
+    MenuItem redo = new MenuItem("Redo");
+    SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
+    menuEdit.getItems().addAll(undo, redo, separatorMenuItem);
 
-        Menu menuView = new Menu("View");
-        Menu menuCode = new Menu("Code");
-        menuBar.getMenus().addAll(menuPaLNote, menuFile, menuEdit, menuView, menuCode);
+    Menu menuView = new Menu("View");
+    Menu menuCode = new Menu("Code");
+    menuBar.getMenus().addAll(menuPaLNote, menuFile, menuEdit, menuView, menuCode);
 
 
+    root.getChildren().addAll(menuBar);
 
-        root.getChildren().addAll(menuBar);
-
-    }
+  }
 }

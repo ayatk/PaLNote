@@ -1,3 +1,0 @@
-dependencies {
-    runtime project(":PaLNote-API", ":PaLNote-Core", ":PaLNote-Test")
-}

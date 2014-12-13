@@ -3,6 +3,7 @@ jdk:
   - oraclejdk8
 notifications:
   slack: snvx:UluUXbvMSf3GiZvRpWDH2X02
+  email: false
   on_success: always
   on_failure: always
   on_start: false

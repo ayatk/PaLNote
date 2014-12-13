@@ -1,5 +1,7 @@
-PaLNote  [![Build Status](https://travis-ci.org/snvx/PaLNote.svg)](https://travis-ci.org/snvx/PaLNote)
+PaLNote
 ========
+[![Build Status](https://travis-ci.org/snvx/PaLNote.svg)](https://travis-ci.org/snvx/PaLNote) [![Coverage Status](https://coveralls.io/repos/snvx/PaLNote/badge.png)](https://coveralls.io/r/snvx/PaLNote)
+
 [palnote.org](http://palnote.org)  
 
 PaLNoteは競技プログラミングに特化したIDEです  

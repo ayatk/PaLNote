@@ -13,9 +13,12 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import net.snvx.palnote.core.ui.AboutAppWindow;
+import org.fxmisc.richtext.CodeArea;
+import org.fxmisc.richtext.LineNumberFactory;
 
 public class Main extends Application {
 
@@ -75,7 +78,13 @@ public class Main extends Application {
     editorButton.setContentDisplay(ContentDisplay.TOP);
 
     toolBar.getItems().addAll(generalButton, pluginButton, editorButton);
-    vBox.getChildren().addAll(menuBar, toolBar);
+
+    HBox hBox = new HBox();
+    CodeArea codeArea = new CodeArea();
+    codeArea.setParagraphGraphicFactory(LineNumberFactory.get(codeArea));
+
+    hBox.getChildren().addAll(codeArea);
+    vBox.getChildren().addAll(menuBar, toolBar, hBox);
     primaryStage.show();
   }
 }

@@ -6,7 +6,7 @@
  *  
  * Created by Ayana Tokikaze on 14/12/13.
  */
-package core.ui;
+package net.snvx.palnote.core.ui;
 
 public interface Keywords {
   static final String[] JAVA_KEYWORDS = new String[] {

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PaLNote.iml" filepath="$PROJECT_DIR$/PaLNote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaLNote-API/PaLNote-API.iml" filepath="$PROJECT_DIR$/PaLNote-API/PaLNote-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaLNote-Core/PaLNote-Core.iml" filepath="$PROJECT_DIR$/PaLNote-Core/PaLNote-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaLNote-Resources/PaLNote-Resources.iml" filepath="$PROJECT_DIR$/PaLNote-Resources/PaLNote-Resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaLNote-Test/PaLNote-Test.iml" filepath="$PROJECT_DIR$/PaLNote-Test/PaLNote-Test.iml" />
+    </modules>
+  </component>
+</project>

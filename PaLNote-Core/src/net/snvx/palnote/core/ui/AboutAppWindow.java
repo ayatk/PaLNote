@@ -28,12 +28,10 @@ public class AboutAppWindow extends Stage {
 
     VBox vbox = new VBox();
 
-    Label lab1 = new Label("PaLNote");
-    lab1.setStyle("-fx-font-size: 20pt;");
-    vbox.getChildren().add(lab1);
+    Label appName = new Label("PaLNote");
+    appName.setStyle("-fx-font-size: 20pt;");
 
-    Label lab3 = new Label("Copyright (c) " + Calendar.getInstance().get(Calendar.YEAR) + " Ayana Tokikaze. All rights reserved.");
-    vbox.getChildren().add(lab3);
+    Label copyright = new Label("Copyright (c) " + Calendar.getInstance().get(Calendar.YEAR) + " Ayana Tokikaze. All rights reserved.");
 
     Properties properties = System.getProperties();
     String javaVersion = properties.getProperty("java.runtime.version", properties.getProperty("java.version", "unknown"));
@@ -42,16 +40,14 @@ public class AboutAppWindow extends Stage {
     String vmVersion = properties.getProperty("java.vm.name", "unknown");
     String vmVendor = properties.getProperty("java.vendor", "unknown");
 
-    Label lab4 = new Label("JRE: " + javaVersion + " " + arch);
-    vbox.getChildren().add(lab4);
+    Label javaProperties = new Label("JRE: " + javaVersion + " " + arch);
 
-    Label lab5 = new Label("JVM: " + vmVersion + " " + vmVendor);
-    vbox.getChildren().add(lab5);
+    Label JVM = new Label("JVM: " + vmVersion + " " + vmVendor);
 
-    Button but1 = new Button("Close");
-    but1.setOnAction((event) -> hide());
-    vbox.getChildren().add(but1);
+    Button windowClose = new Button("Close");
+    windowClose.setOnAction((event) -> hide());
 
+    vbox.getChildren().addAll(appName, copyright, javaProperties, JVM, windowClose);
     Scene scene = new Scene(vbox);
     setScene(scene);
   }

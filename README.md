@@ -1,8 +1,8 @@
-PaLNote
+PaLNote [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/snvx/PaLNote?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  
 ========
+
 [![Build Status](https://travis-ci.org/snvx/PaLNote.svg)](https://travis-ci.org/snvx/PaLNote) [![Coverage Status](https://coveralls.io/repos/snvx/PaLNote/badge.png)](https://coveralls.io/r/snvx/PaLNote)
 
-[palnote.org](http://palnote.org)  
 
 PaLNoteは競技プログラミングに特化したIDEです  
 時間との勝負である競技プログラミングをできるだけ早く、少ない動作でコーディングするためのツールです。  

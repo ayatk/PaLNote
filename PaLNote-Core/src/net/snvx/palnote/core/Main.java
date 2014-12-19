@@ -77,27 +77,27 @@ public class Main extends Application {
     ToolBar toolBar = new ToolBar();
 
     Button saveButton = new Button();
-    saveButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_save_white_24dp.png"));
+    saveButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_save_white_24dp.png"));
     saveButton.setPrefSize(40, 35);
 
     Button undoButton = new Button();
-    undoButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_undo_white_24dp.png"));
+    undoButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_undo_white_24dp.png"));
     undoButton.setPrefSize(40, 35);
 
     Button redoButton = new Button();
-    redoButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_redo_white_24dp.png"));
+    redoButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_redo_white_24dp.png"));
     redoButton.setPrefSize(40, 35);
 
     Button copyButton = new Button();
-    copyButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_content_copy_white_24dp.png"));
+    copyButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_content_copy_white_24dp.png"));
     copyButton.setPrefSize(40, 35);
 
     Button consoleButton = new Button();
-    consoleButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/console_white.png"));
+    consoleButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/console_white.png"));
     consoleButton.setPrefSize(40, 35);
 
     Button settingButton = new Button();
-    settingButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_settings_white_24dp.png"));
+    settingButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_settings_white_24dp.png"));
     settingButton.setPrefSize(40, 35);
     settingButton.setOnAction((event) -> {
               Stage preferencesStage = new PreferencesWindow();
@@ -106,15 +106,15 @@ public class Main extends Application {
     );
 
     Button bugReportButton = new Button();
-    bugReportButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_bug_report_white_24dp.png"));
+    bugReportButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_bug_report_white_24dp.png"));
     bugReportButton.setPrefSize(40, 35);
 
     Button helpButton = new Button();
-    helpButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_help_white_24dp.png"));
+    helpButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_help_white_24dp.png"));
     helpButton.setPrefSize(40, 35);
 
     Button searchButton = new Button();
-    searchButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_search_white_24dp.png"));
+    searchButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_search_white_24dp.png"));
     searchButton.setPrefSize(40, 35);
 
     toolBar.getItems().addAll(

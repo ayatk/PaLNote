@@ -6,50 +6,44 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0"
-      prefWidth="643.0" stylesheets="@../css/Window.css" xmlns="http://javafx.com/javafx/8"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="836.0" prefWidth="756.0" styleClass="TextArea" stylesheets="@../css/Window.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
     <children>
         <MenuBar useSystemMenuBar="true">
             <menus>
                 <Menu mnemonicParsing="false" text="PaLNote">
                     <items>
-                        <MenuItem fx:id="about_app" mnemonicParsing="false" onAction="#onAboutApp"
-                                  text="About PaLNote"/>
-                        <MenuItem fx:id="check_updates" disable="true" mnemonicParsing="false" onAction="#onCheckUpdate"
-                                  text="Check for Updates"/>
-                        <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem fx:id="preferences" mnemonicParsing="false" onAction="#onPreferences"
-                                  text="Preferences..."/>
-                        <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem fx:id="quit_application" mnemonicParsing="false" onAction="#onQuitApplication"
-                                  text="QuitApplication"/>
+                        <MenuItem fx:id="about_app" mnemonicParsing="false" onAction="#onAboutApp" text="About PaLNote" />
+                        <MenuItem fx:id="check_updates" disable="true" mnemonicParsing="false" onAction="#onCheckUpdate" text="Check for Updates" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="preferences" mnemonicParsing="false" onAction="#onPreferences" text="Preferences..." />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="quit_application" mnemonicParsing="false" onAction="#onQuitApplication" text="QuitApplication" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="New"/>
-                        <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem mnemonicParsing="false" text="Open"/>
-                        <MenuItem mnemonicParsing="false" text="Close"/>
+                        <MenuItem mnemonicParsing="false" text="New" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Open" />
+                        <MenuItem mnemonicParsing="false" text="Close" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Edit">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Undo"/>
-                        <MenuItem mnemonicParsing="false" text="Redo"/>
-                        <SeparatorMenuItem mnemonicParsing="false"/>
-                        <MenuItem mnemonicParsing="false" text="Delete"/>
+                        <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="View">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Action 1"/>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="About"/>
+                        <MenuItem mnemonicParsing="false" text="About" />
                     </items>
                 </Menu>
             </menus>
@@ -60,129 +54,160 @@
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_save_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_save_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Save"/>
+                        <Tooltip text="Save" />
                     </tooltip>
                 </Button>
                 <Button fx:id="undo" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_undo_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_undo_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Undo"/>
+                        <Tooltip text="Undo" />
                     </tooltip>
                 </Button>
                 <Button fx:id="redo" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_redo_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_redo_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Redo"/>
+                        <Tooltip text="Redo" />
                     </tooltip>
                 </Button>
                 <Button fx:id="copy" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_content_copy_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_content_copy_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Code Copy"/>
+                        <Tooltip text="Code Copy" />
                     </tooltip>
                 </Button>
                 <Button fx:id="console" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/console_white.png"/>
+                                <Image url="@../images/basic/console_white.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Console"/>
+                        <Tooltip text="Console" />
                     </tooltip>
                 </Button>
                 <Button fx:id="plugins" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_extension_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_extension_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="plugins"/>
+                        <Tooltip text="plugins" />
                     </tooltip>
                 </Button>
-                <Button fx:id="settings" mnemonicParsing="false" onAction="#onPreferences" prefHeight="35.0"
-                        prefWidth="40.0">
+                <Button fx:id="settings" mnemonicParsing="false" onAction="#onPreferences" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="23.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_settings_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_settings_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Settings"/>
+                        <Tooltip text="Settings" />
                     </tooltip>
                 </Button>
                 <Button fx:id="bug_report" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_bug_report_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_bug_report_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Bug Report"/>
+                        <Tooltip text="Bug Report" />
                     </tooltip>
                 </Button>
                 <Button fx:id="help" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_help_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_help_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Help"/>
+                        <Tooltip text="Help" />
                     </tooltip>
                 </Button>
-                <Separator orientation="VERTICAL" prefHeight="35.0" prefWidth="5.0"/>
+                <Separator orientation="VERTICAL" prefHeight="35.0" prefWidth="5.0" />
                 <Button fx:id="search" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                     <graphic>
                         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../images/basic/ic_search_white_24dp.png"/>
+                                <Image url="@../images/basic/ic_search_white_24dp.png" />
                             </image>
                         </ImageView>
                     </graphic>
                     <tooltip>
-                        <Tooltip text="Search"/>
+                        <Tooltip text="Search" />
                     </tooltip>
                 </Button>
             </items>
         </ToolBar>
-        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="TextArea" VBox.vgrow="ALWAYS">
             <children>
-                <TextArea prefHeight="471.0" prefWidth="593.0" styleClass="TextArea" HBox.hgrow="ALWAYS"/>
+            <SplitPane dividerPositions="0.7363494539781591" prefHeight="160.0" prefWidth="200.0" styleClass="TextArea" HBox.hgrow="ALWAYS">
+              <items>
+                      <TextArea prefHeight="758.0" prefWidth="614.0" styleClass="TextArea">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextArea>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="TextArea">
+                           <children>
+                              <Label styleClass="Label" text="input">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextArea prefHeight="200.0" prefWidth="200.0" styleClass="TextArea" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="TextArea">
+                           <children>
+                              <Label styleClass="Label" text="output">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextArea prefHeight="200.0" prefWidth="200.0" styleClass="TextArea" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                    </items>
+                  </SplitPane>
+              </items>
+            </SplitPane>
             </children>
         </HBox>
     </children>

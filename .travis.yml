@@ -3,6 +3,9 @@ jdk:
   - oraclejdk8
 notifications:
   slack: snvx:UluUXbvMSf3GiZvRpWDH2X02
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/aac4d704bf2fde965770
   email: false
   on_success: always
   on_failure: always

@@ -3,18 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>palnote</artifactId>
+        <artifactId>PaLNote</artifactId>
         <groupId>net.snvx.palnote</groupId>
         <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>palnote-api</artifactId>
+    <artifactId>PaLNote-API</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>net.snvx.palnote</groupId>
-            <artifactId>palnote-core</artifactId>
+            <artifactId>PaLNote-Core</artifactId>
             <version>0.1</version>
         </dependency>
     </dependencies>

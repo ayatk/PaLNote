@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.snvx.palnote</groupId>
-    <artifactId>palnote</artifactId>
+    <artifactId>PaLNote</artifactId>
     <packaging>pom</packaging>
     <version>0.1</version>
     <modules>
-        <module>palnote-core</module>
-        <module>palnote-resources</module>
-        <module>palnote-api</module>
-        <module>palnote-test</module>
+        <module>PaLNote-Core</module>
+        <module>PaLNote-Resources</module>
+        <module>PaLNote-API</module>
+        <module>PaLNote-Test</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

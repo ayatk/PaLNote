@@ -8,5 +8,53 @@
  */
 package net.snvx.palnote.core.plugin;
 
-public interface pluginInfo {
+/**
+ * An object that can get the information of the plugin.
+ */
+public interface PluginInfo {
+
+  /**
+   * @return Plugin name
+   */
+  String name();
+
+  /**
+   * @return Plugin version
+   */
+  String version();
+
+  /**
+   * @return Author name
+   */
+  String author();
+
+  /**
+   * @return Plugin description
+   */
+  String description();
+
+  /**
+   * @return Author's email address
+   */
+  String email();
+
+  /**
+   * @return Homepage URL
+   */
+  String homepage();
+
+  /**
+   * @return Software license
+   */
+  String licenses();
+
+  /**
+   * @return Plugin repository
+   */
+  String repository();
+
+  /**
+   * @return Plugin searching keywords
+   */
+  String keywords();
 }

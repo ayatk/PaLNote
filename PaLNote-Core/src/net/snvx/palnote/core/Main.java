@@ -19,6 +19,7 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import net.snvx.palnote.core.ui.AboutAppWindow;
+import net.snvx.palnote.core.ui.preferences.PreferencesWindow;
 import org.fxmisc.richtext.CodeArea;
 import org.fxmisc.richtext.LineNumberFactory;
 
@@ -32,7 +33,7 @@ public class Main extends Application {
   public void start(Stage primaryStage) {
     primaryStage.setTitle("PaLNote");
     VBox vBox = new VBox();
-    primaryStage.setScene(new Scene(vBox, 800, 600));
+    primaryStage.setScene(new Scene(vBox, 1200, 800));
 
     //メニューバー
     MenuBar menuBar = new MenuBar();
@@ -46,6 +47,11 @@ public class Main extends Application {
     );
 
     MenuItem preferences = new MenuItem("Preferences...");
+    preferences.setOnAction((event) -> {
+              Stage preferencesStage = new PreferencesWindow();
+              preferencesStage.show();
+            }
+    );
     MenuItem quitApplication = new MenuItem("Quit");
     quitApplication.setOnAction((event) -> Platform.exit());
     menuBar.setUseSystemMenuBar(true);
@@ -93,6 +99,11 @@ public class Main extends Application {
     Button settingButton = new Button();
     settingButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_settings_white_24dp.png"));
     settingButton.setPrefSize(40, 35);
+    settingButton.setOnAction((event) -> {
+              Stage preferencesStage = new PreferencesWindow();
+              preferencesStage.show();
+            }
+    );
 
     Button bugReportButton = new Button();
     bugReportButton.setGraphic(new ImageView("org/snvx/palnote/resources/images/basic/ic_bug_report_white_24dp.png"));

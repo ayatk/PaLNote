@@ -11,6 +11,10 @@
 
     <artifactId>PaLNote-API</artifactId>
 
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>net.snvx.palnote</groupId>

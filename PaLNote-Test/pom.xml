@@ -11,6 +11,10 @@
 
     <artifactId>PaLNote-Test</artifactId>
 
+    <build>
+        <testSourceDirectory>src</testSourceDirectory>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>net.snvx.palnote</groupId>

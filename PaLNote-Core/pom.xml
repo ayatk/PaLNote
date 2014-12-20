@@ -11,6 +11,9 @@
 
     <artifactId>PaLNote-Core</artifactId>
 
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+    </build>
 
     <dependencies>
         <dependency>

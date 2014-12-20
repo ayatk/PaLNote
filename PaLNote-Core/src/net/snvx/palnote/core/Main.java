@@ -25,6 +25,10 @@ import org.fxmisc.richtext.LineNumberFactory;
 
 public class Main extends Application {
 
+  protected static final double BUTTON_WIDTH = 40;
+  protected static final double BUTTON_HEIGHT = 35;
+  protected static final String ICON_PATH = "net/snvx/palnote/resources/images/basic/";
+
   public static void main(String[] args) {
     launch(args);
   }
@@ -77,28 +81,28 @@ public class Main extends Application {
     ToolBar toolBar = new ToolBar();
 
     Button saveButton = new Button();
-    saveButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_save_white_24dp.png"));
-    saveButton.setPrefSize(40, 35);
+    saveButton.setGraphic(new ImageView(ICON_PATH + "ic_save_white_24dp.png"));
+    saveButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button undoButton = new Button();
-    undoButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_undo_white_24dp.png"));
-    undoButton.setPrefSize(40, 35);
+    undoButton.setGraphic(new ImageView(ICON_PATH + "ic_undo_white_24dp.png"));
+    undoButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button redoButton = new Button();
-    redoButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_redo_white_24dp.png"));
-    redoButton.setPrefSize(40, 35);
+    redoButton.setGraphic(new ImageView(ICON_PATH + "ic_redo_white_24dp.png"));
+    redoButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button copyButton = new Button();
-    copyButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_content_copy_white_24dp.png"));
-    copyButton.setPrefSize(40, 35);
+    copyButton.setGraphic(new ImageView(ICON_PATH + "ic_content_copy_white_24dp.png"));
+    copyButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button consoleButton = new Button();
-    consoleButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/console_white.png"));
-    consoleButton.setPrefSize(40, 35);
+    consoleButton.setGraphic(new ImageView(ICON_PATH + "console_white.png"));
+    consoleButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button settingButton = new Button();
-    settingButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_settings_white_24dp.png"));
-    settingButton.setPrefSize(40, 35);
+    settingButton.setGraphic(new ImageView(ICON_PATH + "ic_settings_white_24dp.png"));
+    settingButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
     settingButton.setOnAction((event) -> {
               Stage preferencesStage = new PreferencesWindow();
               preferencesStage.show();
@@ -106,16 +110,16 @@ public class Main extends Application {
     );
 
     Button bugReportButton = new Button();
-    bugReportButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_bug_report_white_24dp.png"));
-    bugReportButton.setPrefSize(40, 35);
+    bugReportButton.setGraphic(new ImageView(ICON_PATH + "ic_bug_report_white_24dp.png"));
+    bugReportButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button helpButton = new Button();
-    helpButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_help_white_24dp.png"));
-    helpButton.setPrefSize(40, 35);
+    helpButton.setGraphic(new ImageView(ICON_PATH + "ic_help_white_24dp.png"));
+    helpButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     Button searchButton = new Button();
-    searchButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_search_white_24dp.png"));
-    searchButton.setPrefSize(40, 35);
+    searchButton.setGraphic(new ImageView(ICON_PATH + "ic_search_white_24dp.png"));
+    searchButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
 
     toolBar.getItems().addAll(
             saveButton,

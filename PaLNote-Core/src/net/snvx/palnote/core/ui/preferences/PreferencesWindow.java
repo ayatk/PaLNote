@@ -19,6 +19,11 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class PreferencesWindow extends Stage {
+
+  protected static final double BUTTON_WIDTH = 80;
+  protected static final double BUTTON_HEIGHT = 80;
+  protected static final String ICON_PATH = "net/snvx/palnote/resources/images/basic/";
+
   public PreferencesWindow() {
     initModality(Modality.APPLICATION_MODAL);
     initStyle(StageStyle.DECORATED);
@@ -28,23 +33,23 @@ public class PreferencesWindow extends Stage {
     ToolBar toolBar = new ToolBar();
 
     Button generalButton = new Button("General");
-    generalButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_dashboard_white_24dp.png"));
-    generalButton.setPrefSize(80, 80);
+    generalButton.setGraphic(new ImageView(ICON_PATH + "ic_dashboard_white_24dp.png"));
+    generalButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
     generalButton.setContentDisplay(ContentDisplay.TOP);
 
     Button editorButton = new Button("Editor");
-    editorButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_create_white_24dp.png"));
-    editorButton.setPrefSize(80, 80);
+    editorButton.setGraphic(new ImageView(ICON_PATH + "ic_create_white_24dp.png"));
+    editorButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
     editorButton.setContentDisplay(ContentDisplay.TOP);
 
     Button snippetButton = new Button("Snippet");
-    snippetButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_functions_white_24dp.png"));
-    snippetButton.setPrefSize(80, 80);
+    snippetButton.setGraphic(new ImageView(ICON_PATH + "ic_functions_white_24dp.png"));
+    snippetButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
     snippetButton.setContentDisplay(ContentDisplay.TOP);
 
     Button languageButton = new Button("Language");
-    languageButton.setGraphic(new ImageView("net/snvx/palnote/resources/images/basic/ic_language_white_24dp.png"));
-    languageButton.setPrefSize(80, 80);
+    languageButton.setGraphic(new ImageView(ICON_PATH + "ic_language_white_24dp.png"));
+    languageButton.setPrefSize(BUTTON_WIDTH, BUTTON_HEIGHT);
     languageButton.setContentDisplay(ContentDisplay.TOP);
 
     toolBar.getItems().addAll(generalButton, editorButton, snippetButton, languageButton);

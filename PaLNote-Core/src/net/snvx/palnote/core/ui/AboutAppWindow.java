@@ -20,7 +20,7 @@ import javafx.stage.StageStyle;
 import java.util.Calendar;
 import java.util.Properties;
 
-public class AboutAppWindow extends Stage {
+public final class AboutAppWindow extends Stage {
 
   public AboutAppWindow() {
     initModality(Modality.APPLICATION_MODAL);
